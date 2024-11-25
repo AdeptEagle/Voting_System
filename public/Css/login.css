@@ -1,0 +1,119 @@
+body {
+    font-family: sans-serif;
+    background-image:  url("../Images/bg2.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background-color: #f7f7f7; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    width: 800px;
+    overflow: hidden;
+  }
+  
+  .left-side {
+    padding: 40px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .right-side {
+    width: 50%;
+    background-color: #6495ed; 
+    position: relative;
+  }
+  
+  .shape {
+    width: 200px;
+    height: 200px;
+    background-color: #87ceeb; 
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    border-radius: 50%;
+  }
+  
+  h1 {
+    color: #2f4f7f; 
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    width: 100%;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #2f4f7f;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .checkbox input {
+    margin-right: 5px;
+  }
+  
+  .button {
+    background-color: #6495ed; 
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #4682b4; 
+  }
+  
+  .right-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-image {
+    width: 280px; 
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 10px; 
+    margin: 100px 0 0 0; 
+  }
+
+  #error-message {
+    color: #FF0000;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
