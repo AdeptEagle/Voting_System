@@ -64,11 +64,11 @@
                             </span>
                         </a>
                     </li>
-                    <li>
-                        <a href="Voting.html">
+                    <li class="has-subnav">
+                        <a href="{{ route('voting.index') }}">
                             <i class="fa fa-box-archive fa-2x"></i>
                             <span class="nav-text">
-                                Election Vote
+                                Election Voting
                             </span>
                         </a>
                     </li>
