@@ -50,7 +50,7 @@
         </div>
         <div class="wrapper">
             <div class="sidebar">
-                <h5>Admin Menu</h5>
+                <h5>Admin Boktot</h5>
             </div>
             <div class="content">
                 <div class="container">
