@@ -24,12 +24,12 @@ class VotingController extends Controller
             ],
         ];
 
-        return view('vote.index', compact('candidates'));
+        return view('voting.index', compact('candidates'));
     }
 
     public function vote(Request $request)
     {
-        
+       
         $validated = $request->validate([
             'votes' => 'required|array',
             'votes.president' => 'required|exists:candidates,id',
@@ -37,16 +37,18 @@ class VotingController extends Controller
             'votes.secretary' => 'required|exists:candidates,id',
         ]);
 
-      
+        // Store the vote in the database for each position
         foreach ($validated['votes'] as $position => $candidateId) {
             Vote::create([
                 'candidate_id' => $candidateId,
                 'position' => $position,
-                'user_id' => auth()->id(),  
+                'user_id' => auth()->id(),  // Assuming the user is logged in
                 'created_at' => now(),
                 'updated_at' => now(),
             ]);
         }
-        return redirect()->route('vote.index')->with('success', 'Your vote has been submitted!');
+
+        // Redirect back with a success message
+        return redirect()->route('voting.index')->with('success', 'Your vote has been submitted!');
     }
 }
