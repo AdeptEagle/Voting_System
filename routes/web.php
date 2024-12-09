@@ -7,7 +7,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CandidatesController; // For handling multiple candidates
 use App\Http\Controllers\CandidateController; // For handling a single candidate
 use App\Http\Controllers\VotingController;
-use App\Models\User;
+
 // Authentication Routes
 // Route::get('/', function () {
 //     return view('Voting.login');
