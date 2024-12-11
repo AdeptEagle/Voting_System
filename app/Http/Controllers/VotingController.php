@@ -29,7 +29,8 @@ class VotingController extends Controller
 
     public function vote(Request $request)
     {
-       
+
+        // Validate the votes (candidate ID and position for each one)
         $validated = $request->validate([
             'votes' => 'required|array',
             'votes.president' => 'required|exists:candidates,id',
